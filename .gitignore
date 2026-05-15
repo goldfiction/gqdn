@@ -1,0 +1,9 @@
+*.log
+node_modules
+build
+npm-debug.log
+.env
+.DS_Store
+ireport.json
+package-lock.json
+*.private

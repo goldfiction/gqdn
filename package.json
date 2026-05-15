@@ -1,0 +1,31 @@
+{
+  "name": "gqdn",
+  "version": "0.0.1",
+  "description": "A small file manager like dn style in dos days",
+  "repository": "git@github.com:goldfiction/gqdn.git",
+  "private": false,
+  "main": "index.js",
+  "node_version": "18.20.2",
+  "dependencies": {
+    "blessed":"0.1.81"
+  },
+  "devDependencies": {
+    "gqtest": ">=0.0.17",
+    "coffeescript": "2.7.0",
+    "nodemon": "3.1.10"
+  },
+  "scripts": {
+    "start": "node index.js ./",
+    "test": "coffee test.coffee",
+    "test:watch": "nodemon --delay 2 -q -x \"npm test\"",
+    "test:slow": "mocha --openssl-legacy-provider --require coffeescript/register --no-color --reporter min -t 20000 test/test.slow.coffee",
+    "install:nobin": "npm install --no-bin-links --no-optional --omit=optional --ignore-scripts",
+    "install:prod": "npm install --production",
+    "install:prod2": "npm install --omit=dev --no-bin-links",
+    "git": "git add .; git commit -m \"update\"; echo gitted...",
+    "git:push": "git push scm; echo pushed...",
+    "git:setup": "git config --global user.name \"username\";git config --global user.email \"username@gmail.com\";git branch --set-upstream-to=origin/master master;"
+  },
+  "author": "glidev5@gmail.com",
+  "license": "Apache-2"
+}

@@ -1,0 +1,10 @@
+#! source
+export gqdncwd=$(pwd)
+function gqdn(){
+  lastcwd=$(pwd)
+  cd $gqdncwd
+  node index.js $lastcwd
+  cd $lastcwd
+}
+
+
