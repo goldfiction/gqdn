@@ -7,3 +7,4 @@ npm-debug.log
 ireport.json
 package-lock.json
 *.private
+old/

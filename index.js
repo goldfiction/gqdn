@@ -30,8 +30,8 @@ const fileManager = blessed.filemanager({
   parent: screen,
   top: 'center',
   left: 'center',
-  width: '80%',
-  height: '80%',
+  width: '90%',
+  height: '100%',
   border: {
     type: 'line'
   },
